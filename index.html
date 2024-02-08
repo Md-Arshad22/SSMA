@@ -26,6 +26,17 @@
         <h1> Name: <input type="text" ng-module="name"></h1>
         <h2> {{name}} </h2>
     </div>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <h1 ng-mousemove="count=count+ 1"> Move your Mouse Over</h1>
+        <h3>{{count}} </h3>
+
+        <script>
+            var app=angular.module('myApp',[]);
+            app.controller('myCtrl'.function($scope));
+            $scope.count;
+        </script>
+    </div>
 </body>
 
 
